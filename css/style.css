@@ -1,0 +1,209 @@
+body {
+    font-family: 'Inter', 'Lexend Deca', sans-serif;
+    background: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+
+    width: 540px;
+    height:446px ;
+   
+} 
+
+.content {
+    min-width: 100%;
+    
+    padding: 5%;
+    background: hsl(244, 38%, 16%);
+    border-radius: 9px 0 0 9px;
+    
+}
+
+
+
+.main-img {
+    min-width: 100%;
+    background-image: url(../images/image-header-desktop.jpg);
+    background-repeat: no-repeat; 
+    background-color: rgba(170, 92, 219, 1);
+    filter: brightness(1.1) blur(0.5px);
+    box-shadow: inset 0px 500px 1px rgb(170 92 219 / 20%);
+    background-blend-mode: multiply;
+    border-radius: 0 9px 9px 0;
+
+    order:1;
+
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    padding: 4% 11% 2% 13%;
+    font-size: 2.2em;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+p {
+    font-family:'Inter' ;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 15px;
+
+    
+    padding: 0 11%;
+}
+
+.paragraph {
+    line-height: 25px;
+    margin: -1% 4% 5% 2%;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    line-height: 6px;
+
+    padding-top: 7%;
+    margin: 0 15% 0 5%;
+    
+    
+}
+
+h3 {
+    font-size: 23px;
+    margin-left: 10px;
+}
+
+#transform {
+    text-transform: none;
+}
+
+.stats p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 12px;
+    font-family: 'Inter';
+    letter-spacing: 2px;
+}
+
+
+@media (max-width:540px) {
+
+    body {
+        text-align: center;
+    }
+
+    .main-img {
+        height:255px;
+        background-image: url(../images/image-header-mobile.jpg);
+        background-size: contain;
+        border-radius:9px 9px 0 0;
+        order: 0;
+        padding: 17.6px;
+        
+       
+    }
+    .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+    width: 360px;
+    height: auto ;
+    margin: 10% auto;
+    }
+
+    .content {
+        border-radius: 0 0 9px 9px ;
+    }
+
+    h1 {
+        padding:0;
+        margin: 4% 0 8%;
+    }
+
+    .paragraph {
+        font-size: 18px;
+        margin: -1% -5% 5%;
+        line-height: 28px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-right: 8%;
+    }
+
+}
+
+@media (max-width:375px) {
+    body {
+        text-align: center;
+    }
+
+    .main-img {
+        height:196px;
+        background-image: url(../images/image-header-mobile.jpg);
+        background-size: contain;
+        border-radius:9px 9px 0 0;
+        order: 0;
+        
+        
+       
+    }
+    .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+    width: 280px;
+    height: auto ;
+    margin: 10% auto;
+    }
+
+    .content {
+        border-radius: 0 0 9px 9px ;
+    }
+
+    h1 {
+        font-size: 26px;
+        margin: 10% 2%;
+    }
+
+    .paragraph {
+        font-size: 13px;
+        line-height: 21px;
+        margin: 0 -2px;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-right: 8%;
+    }
+    
+}
+
